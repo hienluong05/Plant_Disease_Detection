@@ -77,3 +77,5 @@ We used the [PlantVillage dataset](https://www.kaggle.com/datasets/emmarex/plant
 
 ---
 
+## 📌 Contact me
+For questions, suggestions, or contributions, please open an issue or contact: ms.dangthihienluong@gmail.com
