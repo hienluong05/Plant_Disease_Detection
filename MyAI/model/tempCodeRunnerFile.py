@@ -34,4 +34,3 @@ test_sampler = torch.utils.data.SubsetRandomSampler(test_indices)
 
 # Get number of classes
 targets_size = len(dataset.class_to_idx)
-print('Number of classes:', targets_size)

@@ -2,3 +2,4 @@ project-env/
 .venv/
 **/.venv/
 *.pt
+Plant-Disease-Detection/

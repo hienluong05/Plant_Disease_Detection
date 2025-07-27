@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nhận diện bệnh thực vật</title>
+    <style>
+      body {
+        max-width: 600px;
+        margin: auto;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        color: #2c7a7b;
+      }
+      .result {
+        margin-top: 20px;
+        font-size: 1.2em;
+      }
+      img {
+        max-width: 100%;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nhận diện bệnh thực vật</h1>
+    <form method="post" enctype="multipart/form-data">
+      <label>Chọn ảnh để kiểm tra bệnh:</label><br /><br />
+      <input type="file" name="file" accept="image/*" required />
+      <br /><br />
+      <button type="submit">Dự đoán</button>
+    </form>
+    {% if result %}
+    <div class="result"><strong>Kết quả dự đoán:</strong> {{ result }}</div>
+    {% if image_file %}
+    <img
+      src="{{ url_for('static', filename='upload.jpg') }}"
+      alt="Ảnh upload"
+    />
+    {% endif %} {% endif %}
+  </body>
+</html>
